@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>PREDICTION CRIPTOMOEDAS</title>
+          <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+    <form name="criptomoedas" method="post">
+    {% csrf_token %}
+    <label for="moedas">Escolha seu par de moedas:</label>
+
+    <select name="moedas" id="moedas" method="post">
+        <option value="eth-usd">ETH-USD</option>
+        <option value="btc-usd">BTC-USD</option>
+        <option value="ada-usd">ADA-USD</option>
+        <option value="bnb-usd">BNB-USD</option>
+        <option value="doge-usd">DOGE-USD</option>
+        <option value="xrp-usd">XRP-USD</option>
+        <option value="ltc-usd">LTC-USD</option>
+    </select>
+    <input type="submit" value="Enviar">
+    </form>
+    {% if plot_div %}
+        {% autoescape off %}
+            {{ plot_div }}
+        {% endautoescape %}
+    {% endif %}
+    </body>
+</html>
