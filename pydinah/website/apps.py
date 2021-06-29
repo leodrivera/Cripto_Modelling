@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class WebpyConfig(AppConfig):
+class WebsiteConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'webpy'
+    name = 'website'

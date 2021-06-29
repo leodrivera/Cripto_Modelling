@@ -1,5 +1,5 @@
 from django.http import request
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from plotly.offline import plot
 import plotly.graph_objects as go
 import pandas as pd
@@ -12,6 +12,8 @@ import warnings
 warnings.filterwarnings('ignore')
 pd.options.display.float_format = '${:,.2f}'.format
 
+def index(request):
+    return render(request, 'index.html') 
 
 #prediction ETH
 
@@ -56,7 +58,7 @@ def get_prediction(request):
         )
         data = [trace, trace1]
 
-        layout = dict(title='Previsão de preço',
+        layout = dict(title=f'Previsão de preço {moedas.upper()}',
                     xaxis=dict(title = 'Datas', ticklen=2, zeroline=True))
 
         figure=dict(data=data,layout=layout)
@@ -64,6 +66,5 @@ def get_prediction(request):
         plot_div = plot(figure,output_type='div', include_plotlyjs=False)
         
     
-    return render(request, 'demo-plot.html', 
+    return render(request, 'prediction.html', 
                   context={'plot_div': plot_div})
-

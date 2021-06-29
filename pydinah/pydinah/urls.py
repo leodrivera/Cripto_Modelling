@@ -14,12 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from webpy.views import get_prediction
+from django.urls import path, include
 
 urlpatterns = [
+    #path('', redirect_view),
     path('admin/', admin.site.urls),
-    #path('django_plotly_dash/', include('django_plotly_dash.urls')),
-    path('demo-plot/', get_prediction),
+    path('', include('website.urls')),
 
 ]

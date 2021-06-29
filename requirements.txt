@@ -1,8 +1,14 @@
 torch>=1.8.1
 alpha_vantage>=2.3.1
 pycoingecko>=2.1.0
-python-dotenv>=0.17.0
 matplotlib>=3.2.2
-numpy>=1.19.5
+numpy==1.19.5
 keras>=2.4.3
 tensorflow>=2.5.0
+pandas>=1.2.5
+yfinance>=0.1.59
+pystan==2.19.1.1
+fbprophet==0.7.1
+plotly>=5.1.0
+python-decouple>=3.4
+django-plotly-dash>=1.6.4

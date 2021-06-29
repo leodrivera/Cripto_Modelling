@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>PREDICTION CRIPTOMOEDAS</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="bg-dark py-5">
+            <p class="h4 text-center text-white">Escolha o par de moedas:</p>
+            <form name="criptomoedas" method="post">
+            {% csrf_token %}
+                <div class="row justify-content-md-center">
+                    <div class="col-md-auto">
+                        {% csrf_token %}
+                        <select class="form-select mb-3" aria-label=".form-select-lg example" name="moedas" id="moedas" method="post">
+                            <option value="eth-usd"></option>
+                            <option value="eth-usd">ETH-USD</option>
+                            <option value="btc-usd">BTC-USD</option>
+                            <option value="ada-usd">ADA-USD</option>
+                            <option value="bnb-usd">BNB-USD</option>
+                            <option value="doge-usd">DOGE-USD</option>
+                            <option value="xrp-usd">XRP-USD</option>
+                            <option value="ltc-usd">LTC-USD</option>
+                        </select>
+                    </div>
+                    <div class="col-md-auto">
+                        <input class="btn btn-primary" type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+            {% if plot_div %}
+                {% autoescape off %}
+                    {{ plot_div }}
+                {% endautoescape %}
+            {% endif %}
+        </header>
+    </body>
+</html>
