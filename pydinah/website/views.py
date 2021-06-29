@@ -15,6 +15,9 @@ pd.options.display.float_format = '${:,.2f}'.format
 def index(request):
     return render(request, 'index.html') 
 
+def return_page(request):
+    return render(request, 'demo-plot.html') 
+
 #prediction ETH
 
 def get_prediction(request):
