@@ -2,8 +2,12 @@
 <html>
     <head>
         <title>PyDinah</title>
-            <link href="../static/website/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-            <script src="../static/website/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="static/website/img/favicon.ico" />
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+             
             
     </head>
     <body>
@@ -16,7 +20,7 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="/prediction">Previsão</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Sobre Nós</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Sobre Nós</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Contato</a></li>
                     </ul>
                 </div>
@@ -30,7 +34,7 @@
                             <h1 class="display-5 fw-bolder text-white mb-2">Nós prevemos o futuro dos preços</h1>
                             <p class="lead text-white-50 mb-4">Ensinamos de uma forma prática e rápida a entender o mercado de capitais e também prevemos o futuro dos preços dos ativos!</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Entrar pro Clube</a>
+                                <a class="btn btn-success btn-lg px-4 me-sm-3" href="#features">Entrar pro Clube</a>
                                 <a class="btn btn-danger btn-lg px-4" href="#!">Saiba Mais</a>
                             </div>
                         </div>
@@ -43,29 +47,29 @@
             <div class="container px-5 my-5">
                 <div class="row gx-5">
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Featured title</h2>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h4 fw-bolder">Rede Neural Profunda</h2>
+                        <p>Previsão de preços de ativos através de Tecnologia Avançada.</p>
                         <a class="text-decoration-none" href="#!">
-                            Call to action
+                            Saiba Mais
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
                     <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                        <h2 class="h4 fw-bolder">Featured title</h2>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                        <h2 class="h4 fw-bolder">From Zero to Hero</h2>
+                        <p>Aprenda do ZERO como investir seu dinheiro de forma autônoma. através do celular ou notebook</p>
                         <a class="text-decoration-none" href="#!">
-                            Call to action
+                            Saiba Mais
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
                     <div class="col-lg-4">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                        <h2 class="h4 fw-bolder">Featured title</h2>
-                        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <h2 class="h4 fw-bolder">Formato Simples e Rápido</h2>
+                        <p>Metodologia prática para aprender de forma rápida como funciona o mercado de capitais.</p>
                         <a class="text-decoration-none" href="#!">
-                            Call to action
+                            Saiba Mais
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
@@ -96,38 +100,34 @@
                                 <ul class="list-unstyled mb-4">
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        <strong>5 users</strong>
+                                        <strong>Previsões dos ativos com Machine Learning</strong>
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        5GB storage
+                                        Tutorial know-how prático
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Unlimited public projects
+                                        Grupo VIP WhatsApp
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Community access
+                                        Acesso a Lives
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Unlimited private projects
+                                        Acesso aos Principais indicadores mt4 e mt5
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Dedicated support
+                                        Acesso a Robô de estratégias
                                     </li>
                                     <li class="mb-2">
                                         <i class="bi bi-check text-primary"></i>
-                                        Free linked domain
-                                    </li>
-                                    <li class="text-muted">
-                                        <i class="bi bi-x"></i>
-                                        Monthly status reports
+                                        Pedidos de Análise Gráfica de ativos
                                     </li>
                                 </ul>
-                                <div class="d-grid"><a class="btn btn-primary" href="#!">Choose plan</a></div>
+                                <div class="d-grid"><a class="btn btn-danger" href="#!">Entrar pro Clube</a></div>
                             </div>
                         </div>
                     </div>
@@ -135,7 +135,7 @@
             </div>
         </section>
 
-        <!-- Testimonials section-->
+        <!-- perguntas frequentes-->
         <section class="py-5 border-bottom">
             <div class="container px-5 my-5 px-5">
                 <div class="text-center mb-5">
@@ -191,12 +191,44 @@
                 </div>
             </div>
         </section>
-
+        <section class="bg-light py-5 border-bottom"id="team">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Sobre Nós</h2>
+                    <h3 class="lead mb-0">Dupla de dois.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mx-auto text-center">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <h4>Daniel Vasconcelos</h4>
+                            <p class="text-muted">Analista Gráfico e Cientista de Dados</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 mx-auto text-center">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <h4>Leonardo Rivera</h4>
+                            <p class="text-muted">Engenheiro de Telecomunicações e Cientista de dados</p>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Com o intuito de diseminar a informação referente ao mercado financeiro criamos um clube chamado PyDinah. Onde abordaremos as principais formas de investir seu dinheiro de forma autonoma e segura através de Algoritmos de Redes Neurais Profundas.</p></div>
+                </div>
+            </div>
+        </section>
         <!-- Contact section-->
         <section class="bg-light py-5" id="contato">
             <div class="container px-5 my-5 px-5">
                 <div class="text-center mb-5">
-                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                    <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
                     <h2 class="fw-bolder">Entre em contato</h2>
                     <p class="lead mb-0">Adorariamos ouvir você</p>
                 </div>
@@ -253,7 +285,7 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                            <div class="d-grid"><button class="btn btn-danger btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
                         </form>
                     </div>
                 </div>
