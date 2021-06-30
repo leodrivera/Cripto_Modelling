@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>PREDICTION CRIPTOMOEDAS</title>
+        <title>Predição Criptomoedas</title>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000">
             <div class="container px-5">
                 <a class="navbar-brand" href="#!"><img id="logo" class="img-responsive" src="../static/website/img/logo-dark.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -21,12 +21,11 @@
             </div>
         </nav>
         <header class="bg-dark py-5">
+            <p class="h4 text-center text-white">Escolha o par de moedas:</p>
             <div class='row justify-content-center'>
                 <div class="col-md-3 p-4">
-                    <p class="h4 text-center text-white">Escolha o par de moedas:</p>
                     <form name="criptomoedas" method="post">
                     {% csrf_token %}
-                            <div class="col-md-auto">
                                 <select class="form-select mb-3" aria-label=".form-select-lg example" name="moedas" id="moedas" method="post">
                                     <option value="eth-usd"></option>
                                     <option value="eth-usd">ETH-USD</option>
@@ -37,12 +36,10 @@
                                     <option value="xrp-usd">XRP-USD</option>
                                     <option value="ltc-usd">LTC-USD</option>
                                 </select>
-                            </div>
-                            <div class="col-md-auto">
+                </div>
+                            <div class="col-auto p-4">
                                 <input class="btn btn-success" type="submit" value="Enviar">
                             </div>
-                    </form>
-                </div>
             </div>
             {% if plot_div %}
                 {% autoescape off %}
